@@ -1,2 +1,2 @@
-Class Catcher
+Class Catcher:
     []
