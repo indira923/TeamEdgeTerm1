@@ -3,6 +3,6 @@ from game import Game
 
 sense=SenseHat()
 game=Game()
-game.play(self)
+game.play()
 
   
