@@ -19,13 +19,23 @@ class Player:
         if self.position<self.limit_l:
             self.position= self.position -1
             self.display(-1)
+
+    # def move_up(self):
+    #     if self.position<self.limit_r:
+    #         self.position=self.position +1
+    #         self.display(+1)
     
+    # def move_down(self):
+    #     if self.position<self.limit_l:
+    #         self.position= self.position -1
+    #         self.display(-1)
+
     def get_position(self):
         return self.position
 
     def display(self,move):
-        y=7 
+        y= 7
         x=self.position%8
         self.sense.set_pixel(x-move,y,(0,0,0))
-        self.sense.set_pixel(x,y, (255,255,255))
+        self.sense.set_pixel(x,y, (200,155,255))
         
